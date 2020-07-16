@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  mongodb:
+    image: 'bitnami/mongodb'
+    environment:
+      - MONGODB_USERNAME=perish
+      - MONGODB_PASSWORD=king
+      - MONGODB_DATABASE=document
+
+    ports:
+      - '27017:27017'

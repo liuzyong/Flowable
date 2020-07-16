@@ -1,0 +1,20 @@
+server:
+  port: 9000
+
+flowable:
+  app:
+    # 关闭自动部署 resources 中的 bpmn 定义文件的功能
+    deploy-resources: false
+
+logging:
+  level:
+    root: error
+
+spring:
+  data:
+    mongodb:
+      host: ${hostip:localhost}
+      port: 27017
+      username: perish
+      password: king
+      database: document
